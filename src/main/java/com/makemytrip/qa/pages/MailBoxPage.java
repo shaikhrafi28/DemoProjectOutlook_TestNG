@@ -33,7 +33,7 @@ public class MailBoxPage extends TestBaseSetup {
 	@FindBy(xpath = "//*[@id='app']/div/div[2]/div[1]/div[1]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[1]/div[4]/div[2]/div[1]/button[1]")
 	WebElement emailsendbtn;
 	
-	@FindBy(xpath = "//*[@class='container-177']")
+	@FindBy(xpath = "//*[@id='app']/div/div[2]/div[1]/div[1]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/span/input")
 	WebElement confirmemail;
 	
 	// Initializing the Page Objects:
