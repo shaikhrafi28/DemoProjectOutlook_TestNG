@@ -1,4 +1,4 @@
-package com.makemytrip.qa.base;
+package com.outlook.qa.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -20,9 +20,9 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.makemytrip.qa.pages.MailBoxPage;
-import com.makemytrip.qa.util.TestUtil;
-import com.makemytrip.qa.util.WebEventListener;
+import com.outlook.qa.pages.MailBoxPage;
+import com.outlook.qa.util.TestUtil;
+import com.outlook.qa.util.WebEventListener;
 
 public class TestBaseSetup {
 

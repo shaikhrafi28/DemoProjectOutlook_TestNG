@@ -1,4 +1,4 @@
-package com.makemytrip.qa.testcases;
+package com.outlook.qa.testcases;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
@@ -14,16 +14,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.makemytrip.qa.base.TestBaseSetup;
-import com.makemytrip.qa.pages.MailBoxPage;
-import com.makemytrip.qa.pages.SignUpPage;
+import com.outlook.qa.base.TestBaseSetup;
+import com.outlook.qa.pages.MailBoxPage;
+import com.outlook.qa.pages.SignUpPage;
 
-public class SignUpPageTest extends TestBaseSetup {
+public class MailBoxPageTest extends TestBaseSetup {
 
 	SignUpPage signupPage;
-	MailBoxPage flightsPage;
+	MailBoxPage mailboxpage;
 
-	public SignUpPageTest() {
+	public MailBoxPageTest() {
 		super();
 	}
 
@@ -39,6 +39,9 @@ public class SignUpPageTest extends TestBaseSetup {
 	@Test(priority = 1)
 public void loginTest() throws InterruptedException {
 		signupPage.signInNewUser();
+		mailboxpage = new MailBoxPage();
+		mailboxpage.clicknewmail();
+		mailboxpage.composenewmail();
 		
 	}
 	

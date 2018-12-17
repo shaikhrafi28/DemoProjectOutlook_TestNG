@@ -1,4 +1,4 @@
-package com.makemytrip.qa.util;
+package com.outlook.qa.util;
 /*************************************** PURPOSE **********************************
 
  - This class implements the WebDriverEventListener, which is included under events.
@@ -18,7 +18,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
-import com.makemytrip.qa.base.TestBaseSetup;
+import com.outlook.qa.base.TestBaseSetup;
 
 public class WebEventListener extends TestBaseSetup implements WebDriverEventListener {
 

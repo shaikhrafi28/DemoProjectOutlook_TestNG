@@ -1,4 +1,4 @@
-package com.makemytrip.qa.util;
+package com.outlook.qa.util;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,7 +17,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import org.testng.annotations.Test;
 
-import com.makemytrip.qa.base.TestBaseSetup;
+import com.outlook.qa.base.TestBaseSetup;
 
 import org.apache.poi.sl.usermodel.Sheet;
 

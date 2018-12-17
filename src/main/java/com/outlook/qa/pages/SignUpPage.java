@@ -1,4 +1,4 @@
-package com.makemytrip.qa.pages;
+package com.outlook.qa.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -7,8 +7,8 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.makemytrip.qa.base.TestBaseSetup;
-import com.makemytrip.qa.pages.MailBoxPage;
+import com.outlook.qa.base.TestBaseSetup;
+import com.outlook.qa.pages.MailBoxPage;
 
 public class SignUpPage extends TestBaseSetup {
 
