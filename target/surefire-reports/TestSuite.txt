@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 1.285 s <<< FAILURE! - in TestSuite
+reporting(com.outlook.qa.testcases.MailBoxPageTest)  Time elapsed: 1.064 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.outlook.qa.testcases.MailBoxPageTest.reporting(MailBoxPageTest.java:48)
+
+reporting(com.outlook.qa.testcases.MailBoxPageTest)  Time elapsed: 1.066 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.outlook.qa.testcases.MailBoxPageTest.reporting(MailBoxPageTest.java:48)
+
