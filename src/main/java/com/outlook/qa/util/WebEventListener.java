@@ -17,10 +17,14 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+import org.testng.Reporter;
 
 import com.outlook.qa.base.TestBaseSetup;
 
-public class WebEventListener extends TestBaseSetup implements WebDriverEventListener {
+public class WebEventListener extends TestBaseSetup implements WebDriverEventListener, ITestListener {
 
 	public void beforeNavigateTo(String url, WebDriver driver) {
 		System.out.println("Before navigating to: '" + url + "'");
@@ -61,8 +65,6 @@ public class WebEventListener extends TestBaseSetup implements WebDriverEventLis
 	public void afterNavigateForward(WebDriver driver) {
 		System.out.println("Navigated forward to next page");
 	}
-
-	
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 		System.out.println("Trying to find Element By : " + by.toString());
@@ -123,37 +125,124 @@ public class WebEventListener extends TestBaseSetup implements WebDriverEventLis
 
 	public <X> void afterGetScreenshotAs(OutputType<X> arg0, X arg1) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void afterGetText(WebElement arg0, WebDriver arg1, String arg2) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void afterSwitchToWindow(String arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public <X> void beforeGetScreenshotAs(OutputType<X> arg0) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void beforeGetText(WebElement arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void beforeSwitchToWindow(String arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void onException(Throwable arg0, WebDriver arg1) {
 		// TODO Auto-generated method stub
-		
+
+	}
+
+	@Override
+	public void onTestStart(ITestResult result) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onTestFailure(ITestResult result) {
+		printTestResults(result);
+
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onStart(ITestContext context) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+
+	}
+
+//	
+	private void printTestResults(ITestResult result) {
+
+		Reporter.log("Test Method resides in " + result.getTestClass().getName(), true);
+
+		if (result.getParameters().length != 0) {
+
+			String params = null;
+
+			for (Object parameter : result.getParameters()) {
+
+				params += parameter.toString() + ",";
+
+			}
+
+			Reporter.log("Test Method had the following parameters : " + params, true);
+
+		}
+
+		String status = null;
+
+		switch (result.getStatus()) {
+
+		case ITestResult.SUCCESS:
+
+			status = "Pass";
+
+			break;
+
+		case ITestResult.FAILURE:
+
+			status = "Failed";
+
+			break;
+
+		case ITestResult.SKIP:
+
+			status = "Skipped";
+
+		}
+
+		Reporter.log("Test Status: " + status, true);
+
 	}
 
 }

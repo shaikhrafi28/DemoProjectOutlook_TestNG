@@ -2,12 +2,8 @@ package com.outlook.qa.testcases;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -25,10 +21,7 @@ import com.outlook.qa.pages.MailBoxPage;
 import com.outlook.qa.pages.SignUpPage;
 import com.qa.reporting.BasicExtentReport2;
 
-//For implementing the listener
-@Listeners(com.outlook.qa.util.TestngListener.class)
-
-public class MailBoxPageTest extends TestBaseSetup {
+public class MailBoxPageTest_V1 extends TestBaseSetup {
 
 	SignUpPage signupPage;
 	MailBoxPage mailboxpage;
@@ -37,17 +30,28 @@ public class MailBoxPageTest extends TestBaseSetup {
 	ExtentReports extent;
 	ExtentTest test;
 
-	public MailBoxPageTest() {
+	public MailBoxPageTest_V1() {
 		super();
 	}
-	
+
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		initialization("chrome");
 		giveUrl("outlooksignup");
+		// switchtoframe();
 		signupPage = new SignUpPage();
 	
 	}
+
+@BeforeTest()
+public void startReportingr() {
+	
+	
+//	report1.getResult(ITestResult result);
+		driver.quit();
+
+	}
+
 
 	@Test(priority = 1)
 	public void loginTest() throws InterruptedException {
@@ -57,13 +61,13 @@ public class MailBoxPageTest extends TestBaseSetup {
 		mailboxpage.composenewmail();
 
 		test = extent.createTest("Test Case 1", "PASSED test case");
-		AssertJUnit.assertTrue(true);
+		Assert.assertTrue(true);
 
 	}
 
 	@AfterMethod(enabled = false)
 	public void cbrowser() {
-
+//	report1.getResult(ITestResult result);
 		driver.quit();
 
 	}
