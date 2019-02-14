@@ -48,15 +48,15 @@ public static ExtentTest test;
 	@BeforeSuite()
 	public void beforesuite() {
 	extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/testReport.html", true);
-	extent.loadConfig(new File(System.getProperty("user.dir")+"/src/main/java/com/qa/reporting/extent-config.xml " ));
+	extent.loadConfig(new File(System.getProperty("user.dir")+"/src/main/java/com/qa/reporting/extent_config.xml " ));
 	
 	}
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 	//	report1.startReport("Windows", "chrome");
 		initialization("chrome");
-		
-		//signupPage = new SignUpPage();
+		giveUrl("outlooksignup");
+		signupPage = new SignUpPage();
 		//Logging
 		test.log(LogStatus.PASS, "Browser Launched Successfully");
 	
@@ -66,7 +66,7 @@ public static ExtentTest test;
 
 	@Test(priority = 1)
 	public void loginTest() throws InterruptedException {
-		giveUrl("outlooksignup");
+		
 		
 		
 		signupPage.signInNewUser();
