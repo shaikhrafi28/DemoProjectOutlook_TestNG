@@ -25,8 +25,8 @@ import com.outlook.qa.pages.MailBoxPage;
 import com.outlook.qa.pages.SignUpPage;
 import com.qa.reporting.BasicExtentReport2;
 
-//For implementing the listener
-@Listeners(com.outlook.qa.util.TestngListener.class)
+//For implementing the Testnglistener
+@Listeners(com.outlook.qa.util.TestNG_Listener.class)
 
 public class MailBoxPageTest extends TestBaseSetup {
 
@@ -48,6 +48,8 @@ public class MailBoxPageTest extends TestBaseSetup {
 		signupPage = new SignUpPage();
 	
 	}
+	
+
 
 	@Test(priority = 1)
 	public void loginTest() throws InterruptedException {

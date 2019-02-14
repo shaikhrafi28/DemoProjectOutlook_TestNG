@@ -24,18 +24,18 @@ import org.testng.Reporter;
 
 import com.outlook.qa.base.TestBaseSetup;
 
-public class TestngListener extends TestBaseSetup implements ITestListener {
+public class TestNG_Listener extends TestBaseSetup implements ITestListener {
 
 	
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
+		System.out.println("Test Started");
 
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
+		System.out.println("Test Succeeded");
 
 	}
 
@@ -47,7 +47,7 @@ public class TestngListener extends TestBaseSetup implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
+		System.out.println("Test Skipped");
 
 	}
 
