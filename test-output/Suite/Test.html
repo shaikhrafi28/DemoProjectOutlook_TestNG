@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 14 19:03:06 IST 2019</td>
+<td>Started on:</td><td>Thu Feb 14 19:18:34 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>77 seconds (77939 ms)</td>
+<tr><td>Total time:</td><td>77 seconds (77237 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,7 +76,7 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.outlook.qa.testcases.MailBoxPageTest.loginTest()'><b>loginTest</b><br>Test class: com.outlook.qa.testcases.MailBoxPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;app&apos;]/div/div[2]/div[1]/div[1]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/span/input&quot;}
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;app&apos;]/div/div[2]/div[1]/div[1]/div[1]/div[1]/div&quot;}
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -85,8 +85,8 @@ Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &
 System info: host: &apos;HDC2-D-BXM1T72&apos;, ip: &apos;10.221.126.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\SHAIKH~1.RAF\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 01ef90faed9ccc86d166e4c0cef978a0
-*** Element info: {Using=xpath, value=//*[@id=&apos;app&apos;]/div/div[2]/div[1]/div[1]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/span/input}
+Session ID: 2d737cff710dbc5de37b6c6afb6774b7
+*** Element info: {Using=xpath, value=//*[@id=&apos;app&apos;]/div/div[2]/div[1]/div[1]/div[1]/div[1]/div}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -104,11 +104,11 @@ Session ID: 01ef90faed9ccc86d166e4c0cef978a0
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
-	at com.outlook.qa.pages.MailBoxPage.composenewmail(MailBoxPage.java:51)
-	at com.outlook.qa.testcases.MailBoxPageTest.loginTest(MailBoxPageTest.java:59)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2114537280", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2114537280'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='app']/div/div[2]/div[1]/div[1]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/span/input"}
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.outlook.qa.pages.MailBoxPage.clicknewmail(MailBoxPage.java:46)
+	at com.outlook.qa.testcases.MailBoxPageTest.loginTest(MailBoxPageTest.java:60)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace173060252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace173060252'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='app']/div/div[2]/div[1]/div[1]/div[1]/div[1]/div"}
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
@@ -117,8 +117,8 @@ Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.
 System info: host: 'HDC2-D-BXM1T72', ip: '10.221.126.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\SHAIKH~1.RAF\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 01ef90faed9ccc86d166e4c0cef978a0
-*** Element info: {Using=xpath, value=//*[@id='app']/div/div[2]/div[1]/div[1]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/span/input}
+Session ID: 2d737cff710dbc5de37b6c6afb6774b7
+*** Element info: {Using=xpath, value=//*[@id='app']/div/div[2]/div[1]/div[1]/div[1]/div[1]/div}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -144,9 +144,9 @@ Session ID: 01ef90faed9ccc86d166e4c0cef978a0
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
-	at com.outlook.qa.pages.MailBoxPage.composenewmail(MailBoxPage.java:51)
-	at com.outlook.qa.testcases.MailBoxPageTest.loginTest(MailBoxPageTest.java:59)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.outlook.qa.pages.MailBoxPage.clicknewmail(MailBoxPage.java:46)
+	at com.outlook.qa.testcases.MailBoxPageTest.loginTest(MailBoxPageTest.java:60)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -172,7 +172,7 @@ Session ID: 01ef90faed9ccc86d166e4c0cef978a0
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>63</td>
+<td>56</td>
 <td>com.outlook.qa.testcases.MailBoxPageTest@4116aac9</td></tr>
 </table><p>
 </body>

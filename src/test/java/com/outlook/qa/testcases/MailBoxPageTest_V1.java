@@ -14,8 +14,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
+
 import com.outlook.qa.base.TestBaseSetup;
 import com.outlook.qa.pages.MailBoxPage;
 import com.outlook.qa.pages.SignUpPage;
@@ -26,9 +25,7 @@ public class MailBoxPageTest_V1 extends TestBaseSetup {
 	SignUpPage signupPage;
 	MailBoxPage mailboxpage;
 
-	BasicExtentReport2 report1;
-	ExtentReports extent;
-	ExtentTest test;
+
 
 	public MailBoxPageTest_V1() {
 		super();
@@ -60,8 +57,7 @@ public void startReportingr() {
 		mailboxpage.clicknewmail();
 		mailboxpage.composenewmail();
 
-		test = extent.createTest("Test Case 1", "PASSED test case");
-		Assert.assertTrue(true);
+	
 
 	}
 

@@ -9,6 +9,9 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
+
+import java.io.File;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -18,8 +21,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import com.outlook.qa.base.TestBaseSetup;
 import com.outlook.qa.pages.MailBoxPage;
 import com.outlook.qa.pages.SignUpPage;
@@ -29,20 +32,27 @@ import com.qa.reporting.BasicExtentReport2;
 @Listeners(com.outlook.qa.util.TestNG_Listener.class)
 
 public class MailBoxPageTest extends TestBaseSetup {
-
+    
+public static ExtentReports extent;	
+public static ExtentTest test;
 	SignUpPage signupPage;
 	MailBoxPage mailboxpage;
 
-	BasicExtentReport2 report1;
-	ExtentReports extent;
-	ExtentTest test;
+
 
 	public MailBoxPageTest() {
 		super();
 	}
 	
-	@BeforeMethod
+	@BeforeSuite()
+	public void beforesuite() {
+	extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/testReport.html", true);
+	extent.loadConfig(new File(System.getProperty("user.dir")+"/src/main/java/com/qa/reporting/extent-config.xml " ));
+	
+	}
+	@BeforeTest
 	public void setUp() throws InterruptedException {
+	//	report1.startReport("Windows", "chrome");
 		initialization("chrome");
 		giveUrl("outlooksignup");
 		signupPage = new SignUpPage();
@@ -58,15 +68,15 @@ public class MailBoxPageTest extends TestBaseSetup {
 		mailboxpage.clicknewmail();
 		mailboxpage.composenewmail();
 
-		test = extent.createTest("Test Case 1", "PASSED test case");
-		AssertJUnit.assertTrue(true);
+		
 
 	}
 
 	@AfterMethod(enabled = false)
 	public void cbrowser() {
-
+        
 		driver.quit();
+		
 
 	}
 
