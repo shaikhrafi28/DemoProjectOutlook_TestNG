@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 import com.outlook.qa.base.TestBaseSetup;
 import com.outlook.qa.pages.MailBoxPage;
 import com.outlook.qa.pages.SignUpPage;
-import com.qa.reporting.BasicExtentReport2;
+
 
 public class MailBoxPageTest_V1 extends TestBaseSetup {
 

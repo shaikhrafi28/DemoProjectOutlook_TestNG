@@ -26,7 +26,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.outlook.qa.base.TestBaseSetup;
 import com.outlook.qa.pages.MailBoxPage;
 import com.outlook.qa.pages.SignUpPage;
-import com.qa.reporting.BasicExtentReport2;
+
 
 //For implementing the Testnglistener
 @Listeners(com.outlook.qa.util.TestNG_Listener.class)
