@@ -34,8 +34,8 @@ import com.outlook.qa.pages.SignUpPage;
 
 public class MailBoxPageTest extends TestBaseSetup {
     
-public static ExtentReports extent;	
-public static ExtentTest test;
+public static ExtentReports report;	
+public static ExtentTest logger;
 	SignUpPage signupPage;
 	MailBoxPage mailboxpage;
 
@@ -47,31 +47,31 @@ public static ExtentTest test;
 	
 	@BeforeSuite()
 	public void beforesuite() {
-	extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/testReport.html", true);
-	extent.loadConfig(new File(System.getProperty("user.dir")+"/src/main/java/com/qa/reporting/extent_config.xml " ));
+	report = new ExtentReports(System.getProperty("user.dir") + "/test-output/testReport.html", true);
+	report.loadConfig(new File(System.getProperty("user.dir") + "/src/main/java/com/qa/reporting/ExtentConfig.xml" ));
 	
 	}
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
 	//	report1.startReport("Windows", "chrome");
+		logger = report.startTest(this.getClass().getSimpleName());
 		initialization("chrome");
 		giveUrl("outlooksignup");
 		signupPage = new SignUpPage();
-		//Logging
-		test.log(LogStatus.PASS, "Browser Launched Successfully");
-	
 	}
 	
 
 
 	@Test(priority = 1)
 	public void loginTest() throws InterruptedException {
-		
-		
-		
 		signupPage.signInNewUser();
+		//Logging
+		Assert.assertTrue(true);
+		logger.log(LogStatus.PASS, "Signed In Successfully");
+		
 		mailboxpage = new MailBoxPage();
 		mailboxpage.clicknewmail();
+		logger.log(LogStatus.PASS, "Clicked on New Email");
 		mailboxpage.composenewmail();
 		
 		
@@ -80,18 +80,18 @@ public static ExtentTest test;
 
 	}
 
-	@AfterMethod(enabled = false)
+	@AfterMethod()
 	public void cbrowser() {
         driver.quit();
 		//Logging
-		test.log(LogStatus.PASS, "Browser closed Successfully");
-        extent.endTest(test);
+		logger.log(LogStatus.PASS, "Browser closed Successfully");
+        report.endTest(logger);
 	}
 	
 	@AfterSuite()
 	public void aftersuite() {
-		extent.flush();
-		extent.close();
+		report.flush();
+		report.close();
 		
 	}
 	

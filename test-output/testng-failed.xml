@@ -9,8 +9,11 @@
     <classes>
       <class name="com.outlook.qa.testcases.MailBoxPageTest">
         <methods>
+          <include name="beforesuite"/>
           <include name="loginTest"/>
           <include name="setUp"/>
+          <include name="aftersuite"/>
+          <include name="cbrowser"/>
         </methods>
       </class>
     </classes>
