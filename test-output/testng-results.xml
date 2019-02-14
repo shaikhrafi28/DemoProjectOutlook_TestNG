@@ -8,14 +8,14 @@
       <![CDATA[Test Status: Failed]]>
     </line>
   </reporter-output>
-  <suite started-at="2019-02-14T18:45:35Z" name="Suite" finished-at="2019-02-14T18:47:16Z" duration-ms="101100">
+  <suite started-at="2019-02-14T19:03:06Z" name="Suite" finished-at="2019-02-14T19:04:24Z" duration-ms="77939">
     <groups>
     </groups>
-    <test started-at="2019-02-14T18:45:35Z" name="Test" finished-at="2019-02-14T18:47:16Z" duration-ms="101100">
+    <test started-at="2019-02-14T19:03:06Z" name="Test" finished-at="2019-02-14T19:04:24Z" duration-ms="77939">
       <class name="com.outlook.qa.testcases.MailBoxPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.outlook.qa.testcases.MailBoxPageTest@4116aac9]" started-at="2019-02-14T18:45:35Z" name="setUp" finished-at="2019-02-14T18:45:56Z" duration-ms="20758" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.outlook.qa.testcases.MailBoxPageTest@4116aac9]" started-at="2019-02-14T19:03:06Z" name="setUp" finished-at="2019-02-14T19:03:20Z" duration-ms="14601" status="PASS">
         </test-method>
-        <test-method signature="loginTest()[pri:1, instance:com.outlook.qa.testcases.MailBoxPageTest@4116aac9]" started-at="2019-02-14T18:45:56Z" name="loginTest" finished-at="2019-02-14T18:47:16Z" duration-ms="80294" status="FAIL">
+        <test-method signature="loginTest()[pri:1, instance:com.outlook.qa.testcases.MailBoxPageTest@4116aac9]" started-at="2019-02-14T19:03:20Z" name="loginTest" finished-at="2019-02-14T19:04:23Z" duration-ms="63301" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='app']/div/div[2]/div[1]/div[1]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/span/input"}
@@ -27,7 +27,7 @@ Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.
 System info: host: 'HDC2-D-BXM1T72', ip: '10.221.126.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\SHAIKH~1.RAF\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: ac9dd1aea20eca163286a703e0331a11
+Session ID: 01ef90faed9ccc86d166e4c0cef978a0
 *** Element info: {Using=xpath, value=//*[@id='app']/div/div[2]/div[1]/div[1]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/span/input}]]>
             </message>
             <full-stacktrace>
@@ -40,7 +40,7 @@ Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.
 System info: host: 'HDC2-D-BXM1T72', ip: '10.221.126.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\SHAIKH~1.RAF\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: ac9dd1aea20eca163286a703e0331a11
+Session ID: 01ef90faed9ccc86d166e4c0cef978a0
 *** Element info: {Using=xpath, value=//*[@id='app']/div/div[2]/div[1]/div[1]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/span/input}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -69,7 +69,7 @@ Session ID: ac9dd1aea20eca163286a703e0331a11
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy15.sendKeys(Unknown Source)
 	at com.outlook.qa.pages.MailBoxPage.composenewmail(MailBoxPage.java:51)
-	at com.outlook.qa.testcases.MailBoxPageTest.loginTest(MailBoxPageTest.java:56)
+	at com.outlook.qa.testcases.MailBoxPageTest.loginTest(MailBoxPageTest.java:59)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
