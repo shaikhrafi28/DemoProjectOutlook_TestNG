@@ -3,7 +3,7 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)" preserve-order="true">
     <classes>
-      <class name="com.makemytrip.qa.testcases.MailBoxPageTest">
+      <class name="com.outlook.qa.testcases.MailBoxPageTest">
         <methods>
           <include name="loginTest"/>
           <include name="setUp"/>
