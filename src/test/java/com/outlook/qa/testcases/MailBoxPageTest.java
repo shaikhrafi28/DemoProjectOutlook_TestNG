@@ -23,6 +23,7 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import com.outlook.qa.base.TestBaseSetup;
 import com.outlook.qa.pages.MailBoxPage;
 import com.outlook.qa.pages.SignUpPage;
@@ -50,12 +51,14 @@ public static ExtentTest test;
 	extent.loadConfig(new File(System.getProperty("user.dir")+"/src/main/java/com/qa/reporting/extent-config.xml " ));
 	
 	}
-	@BeforeTest
+	@BeforeMethod
 	public void setUp() throws InterruptedException {
 	//	report1.startReport("Windows", "chrome");
 		initialization("chrome");
-		giveUrl("outlooksignup");
-		signupPage = new SignUpPage();
+		
+		//signupPage = new SignUpPage();
+		//Logging
+		test.log(LogStatus.PASS, "Browser Launched Successfully");
 	
 	}
 	
@@ -63,10 +66,15 @@ public static ExtentTest test;
 
 	@Test(priority = 1)
 	public void loginTest() throws InterruptedException {
+		giveUrl("outlooksignup");
+		
+		
 		signupPage.signInNewUser();
 		mailboxpage = new MailBoxPage();
 		mailboxpage.clicknewmail();
 		mailboxpage.composenewmail();
+		
+		
 
 		
 
@@ -74,10 +82,19 @@ public static ExtentTest test;
 
 	@AfterMethod(enabled = false)
 	public void cbrowser() {
-        
-		driver.quit();
-		
-
+        driver.quit();
+		//Logging
+		test.log(LogStatus.PASS, "Browser closed Successfully");
+        extent.endTest(test);
 	}
+	
+	@AfterSuite()
+	public void aftersuite() {
+		extent.flush();
+		extent.close();
+		
+	}
+	
+	
 
 }
