@@ -1,0 +1,7 @@
+com\outlook\qa\pages\MailBoxPage.class
+com\outlook\qa\pages\SignUpPage.class
+com\outlook\qa\util\TestUtil.class
+com\outlook\qa\util\WebEventListener.class
+com\outlook\qa\util\TestNG_Listener.class
+com\qa\reporting\BasicExtentReport.class
+com\outlook\qa\base\TestBaseSetup.class

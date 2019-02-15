@@ -28,73 +28,79 @@ import com.outlook.qa.base.TestBaseSetup;
 import com.outlook.qa.pages.MailBoxPage;
 import com.outlook.qa.pages.SignUpPage;
 
-
 //For implementing the Testnglistener
 @Listeners(com.outlook.qa.util.TestNG_Listener.class)
 
 public class MailBoxPageTest extends TestBaseSetup {
-    
-public static ExtentReports report;	
-public static ExtentTest logger;
+
+	public static ExtentReports report;
+	public static ExtentTest logger;
 	SignUpPage signupPage;
 	MailBoxPage mailboxpage;
-
-
 
 	public MailBoxPageTest() {
 		super();
 	}
-	
+
 	@BeforeSuite()
 	public void beforesuite() {
-	report = new ExtentReports(System.getProperty("user.dir") + "/test-output/testReport.html", true);
-	report.loadConfig(new File(System.getProperty("user.dir") + "/src/main/java/com/qa/reporting/ExtentConfig.xml" ));
-	
+		report = new ExtentReports(System.getProperty("user.dir") + "/test-output/testReport.html", true);
+		report.loadConfig(
+				new File(System.getProperty("user.dir") + "/src/main/java/com/qa/reporting/ExtentConfig.xml"));
+
 	}
+
 	@BeforeMethod
 	public void setUp() throws InterruptedException {
-	//	report1.startReport("Windows", "chrome");
+		// report1.startReport("Windows", "chrome");
 		logger = report.startTest(this.getClass().getSimpleName());
 		initialization("chrome");
 		giveUrl("outlooksignup");
 		signupPage = new SignUpPage();
 	}
-	
-
 
 	@Test(priority = 1)
-	public void loginTest() throws InterruptedException {
+	public void loginToOutlook() throws InterruptedException {
 		signupPage.signInNewUser();
-		//Logging
+		// Logging
 		Assert.assertTrue(true);
 		logger.log(LogStatus.PASS, "Signed In Successfully");
-		
+
+	}
+
+	@Test(priority = 2)
+	public void clickNewEmail() throws InterruptedException {
+		signupPage.signInNewUser();
 		mailboxpage = new MailBoxPage();
 		mailboxpage.clicknewmail();
 		logger.log(LogStatus.PASS, "Clicked on New Email");
+
+	}
+
+	@Test(priority = 3)
+	public void composeNewEmail() throws InterruptedException {
+		signupPage.signInNewUser();
+		mailboxpage = new MailBoxPage();
+		mailboxpage.clicknewmail();
 		mailboxpage.composenewmail();
-		
-		
-
-		
-
+		logger.log(LogStatus.PASS, "Composed Mail Successfully");
+		report.endTest(logger);
 	}
 
 	@AfterMethod()
 	public void cbrowser() {
-        driver.quit();
-		//Logging
+		// teardo
+		driver.quit();
+		// Logging
 		logger.log(LogStatus.PASS, "Browser closed Successfully");
-        report.endTest(logger);
+		report.endTest(logger);
 	}
-	
+
 	@AfterSuite()
 	public void aftersuite() {
 		report.flush();
 		report.close();
-		
+
 	}
-	
-	
 
 }
