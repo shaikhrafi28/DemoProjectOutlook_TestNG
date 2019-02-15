@@ -35,9 +35,9 @@ public class TestUtil extends TestBaseSetup {
 		driver.switchTo().frame("mainpanel");
 	}
 
-	public void tearDown(ITestResult result)
+	public static void tearDown()
 	{
-	 
+	ITestResult result = null;
 	// Here will compare if test is failing then only it will enter into if condition
 	if(ITestResult.FAILURE==result.getStatus())
 	{

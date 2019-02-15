@@ -10,10 +10,10 @@
       <class name="com.outlook.qa.testcases.MailBoxPageTest">
         <methods>
           <include name="beforesuite"/>
-          <include name="loginTest"/>
+          <include name="clickNewEmail"/>
           <include name="setUp"/>
-          <include name="aftersuite"/>
           <include name="cbrowser"/>
+          <include name="composeNewEmail"/>
         </methods>
       </class>
     </classes>

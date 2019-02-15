@@ -3,6 +3,7 @@ package com.outlook.qa.testcases;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
+import org.testng.ITestResult;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -27,6 +28,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.outlook.qa.base.TestBaseSetup;
 import com.outlook.qa.pages.MailBoxPage;
 import com.outlook.qa.pages.SignUpPage;
+import com.outlook.qa.util.TestUtil;
 
 //For implementing the Testnglistener
 @Listeners(com.outlook.qa.util.TestNG_Listener.class)
@@ -89,6 +91,9 @@ public class MailBoxPageTest extends TestBaseSetup {
 
 	@AfterMethod()
 	public void cbrowser() {
+		TestUtil obj1 = new TestUtil();
+		obj1.tearDown();
+
 		// teardo
 		driver.quit();
 		// Logging
