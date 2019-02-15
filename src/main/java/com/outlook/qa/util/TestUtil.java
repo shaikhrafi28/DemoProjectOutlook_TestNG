@@ -51,7 +51,7 @@ public class TestUtil extends TestBaseSetup {
 	 
 	// Copy files to specific location here it will save all screenshot in our project home directory and
 	// result.getName() will return name of test case so that screenshot name will be same
-	FileUtils.copyFile(source, new File("./Screenshots/"+result.getName()+".png"));
+	FileUtils.copyFile(source, new File((System.getProperty("user.dir") + "test-output/Screenshots"+ result.getName()+".png")));
 	 
 	System.out.println("Screenshot taken");
 	} 
