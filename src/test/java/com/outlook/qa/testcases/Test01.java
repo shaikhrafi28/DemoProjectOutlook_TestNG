@@ -8,7 +8,7 @@ import com.outlook.qa.pages.MailBoxPage;
 import com.outlook.qa.pages.SignUpPage;
 import com.outlook.qa.util.extentreports.ExtentTestManager;
  
-public class roughM extends TestBaseSetup {
+public class Test01 extends TestBaseSetup {
  
     // Extra information:
     // 1) @BeforeClass we declared driver and wait variables
