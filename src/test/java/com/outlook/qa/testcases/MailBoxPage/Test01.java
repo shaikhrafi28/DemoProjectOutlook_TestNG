@@ -1,5 +1,5 @@
 
-package com.outlook.qa.testcases;
+package com.outlook.qa.testcases.MailBoxPage;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -32,7 +32,7 @@ public class Test01 extends TestBaseSetup {
 
 		// *************PAGE INSTANTIATIONS*************
 		SignUpPage signupPage = new SignUpPage();
-		MailBoxPage mailboxpage = new MailBoxPage();
+	//	MailBoxPage mailboxpage = new MailBoxPage();
 
 		// *************PAGE METHODS********************
 		signupPage.signInUser("shaikhrafi08@hotmail.com", "Helloworld");

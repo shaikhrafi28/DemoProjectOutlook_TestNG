@@ -1,4 +1,4 @@
-package com.outlook.qa.testcases;
+package com.outlook.qa.testcases.Rough;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
@@ -33,14 +33,14 @@ import com.outlook.qa.util.baseutility.TestUtil;
 //For implementing the Testnglistener
 @Listeners(com.outlook.qa.util.listeners.TestNGTestListener.class)
 
-public class MailBoxPageTest extends TestBaseSetup {
+public class MailBoxPageTest_Updated extends TestBaseSetup {
 
 	public static ExtentReports report;
 	public static ExtentTest logger;
 	SignUpPage signupPage;
 	MailBoxPage mailboxpage;
 
-	public MailBoxPageTest() {
+	public MailBoxPageTest_Updated() {
 		super();
 	}
 
@@ -63,11 +63,12 @@ public class MailBoxPageTest extends TestBaseSetup {
 
 	@Test(priority = 1)
 	public void loginToOutlook() throws InterruptedException {
-		signupPage.signInUser(null, null);;
+		signupPage.signInUser(null, null);
 		// Logging
-		Assert.assertTrue(true);
+	//	Assert.assertTrue(true);
+		
 		logger.log(LogStatus.PASS, "Signed In Successfully");
-
+		logger.log(LogStatus.FAIL, "Could not sign in");
 	}
 
 	@Test(priority = 2)
@@ -91,8 +92,8 @@ public class MailBoxPageTest extends TestBaseSetup {
 
 	@AfterMethod()
 	public void cbrowser() {
-		TestUtil obj1 = new TestUtil();
-		obj1.tearDown();
+		
+	//	TestUtil.tearDown();
 
 		// teardo
 		driver.quit();
