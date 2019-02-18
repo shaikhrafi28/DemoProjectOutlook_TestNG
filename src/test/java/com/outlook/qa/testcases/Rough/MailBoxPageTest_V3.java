@@ -27,7 +27,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.outlook.qa.base.TestBaseSetup;
 import com.outlook.qa.pages.MailBoxPage;
-import com.outlook.qa.pages.SignUpPage;
+import com.outlook.qa.pages.LoginPage;
 import com.outlook.qa.util.baseutility.TestUtil;
 
 //For implementing the Testnglistener
@@ -37,7 +37,7 @@ public class MailBoxPageTest_V3 extends TestBaseSetup {
 
 	public static ExtentReports report;
 	public static ExtentTest logger;
-	SignUpPage signupPage;
+	LoginPage signupPage;
 	MailBoxPage mailboxpage;
 
 	public MailBoxPageTest_V3() {
@@ -58,7 +58,7 @@ public class MailBoxPageTest_V3 extends TestBaseSetup {
 		logger = report.startTest(this.getClass().getSimpleName());
 		initialization("chrome");
 		giveUrl("outlooksignup");
-		signupPage = new SignUpPage();
+		signupPage = new LoginPage();
 	}
 
 	@Test(priority = 1)

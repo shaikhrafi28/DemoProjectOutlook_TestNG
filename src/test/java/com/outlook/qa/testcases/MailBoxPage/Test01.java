@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.outlook.qa.base.TestBaseSetup;
 import com.outlook.qa.pages.MailBoxPage;
-import com.outlook.qa.pages.SignUpPage;
+import com.outlook.qa.pages.LoginPage;
 import com.outlook.qa.util.extentreports.ExtentTestManager;
 
 public class Test01 extends TestBaseSetup {
@@ -31,7 +31,7 @@ public class Test01 extends TestBaseSetup {
 		ExtentTestManager.getTest().setDescription("Invalid Login Scenario with wrong username and password.");
 
 		// *************PAGE INSTANTIATIONS*************
-		SignUpPage signupPage = new SignUpPage();
+		LoginPage signupPage = new LoginPage();
 	//	MailBoxPage mailboxpage = new MailBoxPage();
 
 		// *************PAGE METHODS********************

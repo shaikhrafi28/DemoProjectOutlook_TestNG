@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.outlook.qa.base.TestBaseSetup;
 import com.outlook.qa.pages.MailBoxPage;
 
-public class SignUpPage extends TestBaseSetup {
+public class LoginPage extends TestBaseSetup {
 
 	@FindBy(xpath = "//*[contains(text(),'Create free account')]")
 	WebElement createAccountBtn;
@@ -58,7 +58,7 @@ public class SignUpPage extends TestBaseSetup {
 	WebElement Byear;
 
 	// Initializing the Page Objects: VERY IMPORTANT
-	public SignUpPage() {
+	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
 

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.outlook.qa.base.TestBaseSetup;
-import com.outlook.qa.pages.SignUpPage;
+import com.outlook.qa.pages.LoginPage;
 
 public class MailBoxPage extends TestBaseSetup {
 
