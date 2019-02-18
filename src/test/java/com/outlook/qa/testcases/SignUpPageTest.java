@@ -38,7 +38,7 @@ public class SignUpPageTest extends TestBaseSetup {
 
 	@Test(priority = 1)
 public void loginTest() throws InterruptedException {
-		signupPage.signInNewUser();
+		signupPage.signInUser(null, null);
 		
 	}
 	

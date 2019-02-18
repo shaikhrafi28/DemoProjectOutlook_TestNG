@@ -75,11 +75,13 @@ public class SignUpPage extends TestBaseSetup {
 		nextBtn.click();
 	}
 
-	public MailBoxPage signInNewUser() throws InterruptedException {
+	public MailBoxPage signInUser(String useremail, String userpwd) throws InterruptedException {
 		signInBtn.click();
-		emailID.sendKeys(prop.getProperty("Pemail"));
+	//	emailID.sendKeys(prop.getProperty("Pemail"));
+		emailID.sendKeys(useremail);
 		nextSIGNIN.click();
-		pswdP.sendKeys(prop.getProperty("Ppwd"));
+	//	pswdP.sendKeys(prop.getProperty("Ppwd"));
+		pswdP.sendKeys(userpwd);
 		Thread.sleep(3000);
 		nextSIGNIN.click();
 		return new MailBoxPage();

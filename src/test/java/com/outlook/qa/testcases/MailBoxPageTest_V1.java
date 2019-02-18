@@ -52,7 +52,7 @@ public void startReportingr() {
 
 	@Test(priority = 1)
 	public void loginTest() throws InterruptedException {
-		signupPage.signInNewUser();
+		signupPage.signInUser(null, null);
 		mailboxpage = new MailBoxPage();
 		mailboxpage.clicknewmail();
 		mailboxpage.composenewmail();

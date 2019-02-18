@@ -63,7 +63,7 @@ public class MailBoxPageTest extends TestBaseSetup {
 
 	@Test(priority = 1)
 	public void loginToOutlook() throws InterruptedException {
-		signupPage.signInNewUser();
+		signupPage.signInUser(null, null);;
 		// Logging
 		Assert.assertTrue(true);
 		logger.log(LogStatus.PASS, "Signed In Successfully");
@@ -72,7 +72,7 @@ public class MailBoxPageTest extends TestBaseSetup {
 
 	@Test(priority = 2)
 	public void clickNewEmail() throws InterruptedException {
-		signupPage.signInNewUser();
+		signupPage.signInUser(null, null);
 		mailboxpage = new MailBoxPage();
 		mailboxpage.clicknewmail();
 		logger.log(LogStatus.PASS, "Clicked on New Email");
@@ -81,7 +81,7 @@ public class MailBoxPageTest extends TestBaseSetup {
 
 	@Test(priority = 3)
 	public void composeNewEmail() throws InterruptedException {
-		signupPage.signInNewUser();
+		signupPage.signInUser(null, null);
 		mailboxpage = new MailBoxPage();
 		mailboxpage.clicknewmail();
 		mailboxpage.composenewmail();

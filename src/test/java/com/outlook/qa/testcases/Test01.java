@@ -11,7 +11,7 @@ import com.outlook.qa.util.extentreports.ExtentTestManager;
 public class Test01 extends TestBaseSetup {
  
     // Extra information:
-    // 1) @BeforeClass we declared driver and wait variables
+    
     // 2) We send these driver and wait variables to the page class with below declaration
     //    Homepage homepage = new HomePage(driver,wait);
     // 3) super () method in page class transfer the driver and wait variables values to the BasePage class.
