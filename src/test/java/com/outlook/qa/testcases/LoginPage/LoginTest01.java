@@ -2,7 +2,9 @@
 package com.outlook.qa.testcases.LoginPage;
 
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.outlook.qa.base.TestBaseSetup;
@@ -16,51 +18,35 @@ public class LoginTest01 extends TestBaseSetup {
 
 	// 2) We send these driver and wait variables to the page class with below
 	// declaration
-	
+
 	// 3) super () method in page class transfer the driver and wait variables
 	// values to the BasePage class.
-	@BeforeMethod
+	@BeforeTest
 	public void set_up() {
 		initialization("chrome");
 		giveUrl("outlooksignup");
 	}
 
 	@Test(priority = 0, description = "Invalid Login Scenario with wrong username and password.")
-	public void invalidLoginTest_InvalidUserNameInvalidPassword() throws InterruptedException {
+	public void invalidLoginTest_InvalidPassword() throws InterruptedException {
 		// ExtentReports Description
 		ExtentTestManager.getTest().setDescription("Invalid Login Scenario with wrong username and password.");
 
 		// *************PAGE INSTANTIATIONS*************
 		LoginPage signupPage = new LoginPage();
-		// MailBoxPage mailboxpage = new MailBoxPage();
+		
 
 		// *************PAGE METHODS********************
 		signupPage.signInUser("shaikhrafi08@hotmail.com", "Helloworld");
 
 		// *************ASSERTIONS***********************
-		signupPage.verifyLoginPassword();
+		Thread.sleep(500);
+		signupPage.verifyLoginError();
 	}
 
-	/*
-	 * @Test(enabled=false,priority = 1, description =
-	 * "Invalid Login Scenario with empty username and password.") public void
-	 * invalidLoginTest_EmptyUserEmptyPassword() throws InterruptedException { //
-	 * ExtentReports Description ExtentTestManager.getTest().
-	 * setDescription("Invalid Login Scenario with empty username and password.");
-	 * 
-	 * // *************PAGE INSTANTIATIONS************* SignUpPage signupPage = new
-	 * SignUpPage(); MailBoxPage mailboxpage = new MailBoxPage();
-	 * 
-	 * // *************PAGE METHODS******************** signupPage.signInUser(null,
-	 * null); mailboxpage = new MailBoxPage(); mailboxpage.clicknewmail();
-	 * 
-	 * // *************ASSERTIONS*********************** Thread.sleep(500);
-	 * 
-	 * }
-	 */
-
-	@AfterMethod()
-	public void cteardown() {
+	@AfterTest()
+	public void teardown() {
+		
 		driver.quit();
 
 	}

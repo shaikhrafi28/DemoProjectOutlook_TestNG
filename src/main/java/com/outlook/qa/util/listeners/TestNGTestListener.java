@@ -54,10 +54,10 @@ public class TestNGTestListener extends TestBaseSetup implements ITestListener {
  
         //Get driver from BaseTest and assign to local webdriver variable.
         Object testClass = iTestResult.getInstance();
-        WebDriver webDriver = ((TestBaseSetup) testClass).getDriver();
+        WebDriver driver = ((TestBaseSetup) testClass).getDriver();
  
         //Take base64Screenshot screenshot.
-        String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)webDriver).
+        String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)driver).
                 getScreenshotAs(OutputType.BASE64);
  
         //Extentreports log and screenshot operations for failed tests.

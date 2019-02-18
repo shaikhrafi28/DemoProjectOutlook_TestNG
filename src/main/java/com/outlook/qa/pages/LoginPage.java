@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.outlook.qa.base.TestBaseSetup;
 import com.outlook.qa.pages.MailBoxPage;
@@ -57,6 +58,14 @@ public class LoginPage extends TestBaseSetup {
 	@FindBy(xpath = "//*[@id='BirthYear']")
 	WebElement Byear;
 
+	@FindBy(xpath = "//*[@id='passwordError']")
+	WebElement loginErrorpart1;
+	
+	@FindBy(xpath = "//*[@id='idA_IL_ForgotPassword0']")
+	WebElement loginErrorpart2;
+	
+	
+	
 	// Initializing the Page Objects: VERY IMPORTANT
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
@@ -90,7 +99,14 @@ public class LoginPage extends TestBaseSetup {
 	}
 	
 public void verifyLoginPassword() {
+	
 	assertTrue(driver.getCurrentUrl().endsWith("failed"));	
+	
 	}
 
+public void verifyLoginError() {
+	
+//	assertTrue(driver.getCurrentUrl().endsWith("failed"));	
+	Assert.assertEquals("Your account or password is incorrect. If you don't remember your password, ", loginErrorpart1.getText());
+	}
 }
