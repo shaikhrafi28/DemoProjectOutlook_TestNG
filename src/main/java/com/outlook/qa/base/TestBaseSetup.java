@@ -21,8 +21,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.outlook.qa.pages.MailBoxPage;
-import com.outlook.qa.util.TestUtil;
-import com.outlook.qa.util.WebEventListener;
+import com.outlook.qa.util.baseutility.TestUtil;
+import com.outlook.qa.util.listeners.WebEventListener;
 
 public class TestBaseSetup {
 
@@ -77,14 +77,16 @@ public static void initialization(String browserName) {
 
 		}
 
-	/*	
+		
 		//For WebEventListener
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
 		driver = e_driver;
-   */
+   
+		
+		
 		driver.manage().window().maximize();
 		
 		driver.manage().deleteAllCookies();
@@ -114,7 +116,11 @@ public static void giveUrl(String url) {
         popup.click();
 		
 	}
-
+	
+	public WebDriver getDriver() {
+        return driver;
+    }
+	
 	public void  closebrowser() {
 		//Closing via JavaScript 
 		JavascriptExecutor js = (JavascriptExecutor) driver;

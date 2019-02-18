@@ -1,4 +1,4 @@
-package com.outlook.qa.util;
+package com.outlook.qa.util.baseutility;
 
 import java.io.File;
 import java.io.FileInputStream;

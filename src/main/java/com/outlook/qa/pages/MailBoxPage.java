@@ -18,8 +18,10 @@ public class MailBoxPage extends TestBaseSetup {
 	
 	
 	
-	
+	//@FindBy(xpath = "//*[@id='app']/div/div[2]/div[1]/div[1]/div[1]/div[1]/div")
 	@FindBy(xpath = "//*[@id='app']/div/div[2]/div[1]/div[1]/div[1]/div[1]/div")
+	
+	//*[@id="app"]/div/div[2]/div[1]/div[1]/div[1]/div[1]/div/button/div/i
 	WebElement composemail;
 	
 	@FindBy(xpath = "//*[@id='app']/div/div[2]/div[1]/div[1]/div[3]/div[2]/div/div[2]/div[1]/div/div/div/div/div[1]/div[1]/div[1]/div[2]/div/div/div/span/input")

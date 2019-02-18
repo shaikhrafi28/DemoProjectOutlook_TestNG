@@ -7,13 +7,13 @@
     <parameter name="OS" value="Windows"/>
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.outlook.qa.testcases.MailBoxPageTest">
+      <class name="com.outlook.qa.testcases.MailBoxPageTest_V3">
         <methods>
+          <include name="cbrowser"/>
+          <include name="aftersuite"/>
+          <include name="composeNewEmail"/>
           <include name="beforesuite"/>
           <include name="setUp"/>
-          <include name="aftersuite"/>
-          <include name="cbrowser"/>
-          <include name="composeNewEmail"/>
         </methods>
       </class>
     </classes>
