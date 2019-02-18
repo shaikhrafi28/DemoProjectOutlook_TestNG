@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 18 19:08:41 IST 2019</td>
+<td>Started on:</td><td>Mon Feb 18 19:31:17 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21347 ms)</td>
+<tr><td>Total time:</td><td>74 seconds (74474 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.outlook.qa.testcases.Test01.invalidLoginTest_InvalidUserNameInvalidPassword()'><b>invalidLoginTest_InvalidUserNameInvalidPassword</b><br>Test class: com.outlook.qa.testcases.Test01<br>Test method: Invalid Login Scenario with wrong username and password.</td>
+<td title='com.outlook.qa.testcases.LoginPage.LoginTest01.invalidLoginTest_InvalidUserNameInvalidPassword()'><b>invalidLoginTest_InvalidUserNameInvalidPassword</b><br>Test class: com.outlook.qa.testcases.LoginPage.LoginTest01<br>Test method: Invalid Login Scenario with wrong username and password.</td>
 <td><div><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
-	at com.outlook.qa.pages.SignUpPage.verifyLoginPassword(SignUpPage.java:93)
-	at com.outlook.qa.testcases.Test01.invalidLoginTest_InvalidUserNameInvalidPassword(Test01.java:41)
+	at com.outlook.qa.pages.LoginPage.verifyLoginPassword(LoginPage.java:93)
+	at com.outlook.qa.testcases.LoginPage.LoginTest01.invalidLoginTest_InvalidUserNameInvalidPassword(LoginTest01.java:41)
 ... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1671816300", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace1671816300'><pre>java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
 	at org.testng.Assert.assertTrue(Assert.java:37)
 	at org.testng.Assert.assertTrue(Assert.java:47)
-	at com.outlook.qa.pages.SignUpPage.verifyLoginPassword(SignUpPage.java:93)
-	at com.outlook.qa.testcases.Test01.invalidLoginTest_InvalidUserNameInvalidPassword(Test01.java:41)
+	at com.outlook.qa.pages.LoginPage.verifyLoginPassword(LoginPage.java:93)
+	at com.outlook.qa.testcases.LoginPage.LoginTest01.invalidLoginTest_InvalidUserNameInvalidPassword(LoginTest01.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,10 +112,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>8</td>
-<td>com.outlook.qa.testcases.Test01@1a677343</td></tr>
+<td>18</td>
+<td>com.outlook.qa.testcases.LoginPage.LoginTest01@1a677343</td></tr>
 <tr>
-<td title='com.outlook.qa.testcases.Test01.invalidLoginTest_InvalidUserNameInvalidPassword()'><b>invalidLoginTest_InvalidUserNameInvalidPassword</b><br>Test class: com.outlook.qa.testcases.Test01<br>Test method: Invalid Login Scenario with wrong username and password.</td>
+<td title='com.outlook.qa.testcases.LoginPage.LoginTest01.invalidLoginTest_InvalidUserNameInvalidPassword()'><b>invalidLoginTest_InvalidUserNameInvalidPassword</b><br>Test class: com.outlook.qa.testcases.LoginPage.LoginTest01<br>Test method: Invalid Login Scenario with wrong username and password.</td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;HDC2-D-BXM1T72&apos;, ip: &apos;10.221.126.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
@@ -130,8 +130,8 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:302)
 	at com.outlook.qa.util.listeners.Retry.extendReportsFailOperations(Retry.java:38)
 	at com.outlook.qa.util.listeners.Retry.retry(Retry.java:26)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace140428850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace140428850'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace470132045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace470132045'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'HDC2-D-BXM1T72', ip: '10.221.126.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
 Driver info: driver.version: EventFiringWebDriver
@@ -168,8 +168,8 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>21</td>
-<td>com.outlook.qa.testcases.Test01@1a677343</td></tr>
+<td>74</td>
+<td>com.outlook.qa.testcases.LoginPage.LoginTest01@1a677343</td></tr>
 </table><p>
 </body>
 </html>
