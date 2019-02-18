@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="OS" value="Windows"/>
-  <parameter name="browser" value="Chrome"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.outlook.qa.util.listeners.TestNGTestListener"/>
+    <listener class-name="com.outlook.qa.util.listeners.AnnotationTransformer"/>
+  </listeners>
   <test name="Test(failed)" preserve-order="true">
-    <parameter name="OS" value="Windows"/>
-    <parameter name="browser" value="Chrome"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.outlook.qa.testcases.MailBoxPageTest_V3">
+      <class name="com.outlook.qa.testcases.Test01">
         <methods>
-          <include name="cbrowser"/>
-          <include name="aftersuite"/>
-          <include name="composeNewEmail"/>
-          <include name="beforesuite"/>
-          <include name="setUp"/>
+          <include name="set_up"/>
+          <include name="invalidLoginTest_InvalidUserNameInvalidPassword"/>
         </methods>
       </class>
     </classes>

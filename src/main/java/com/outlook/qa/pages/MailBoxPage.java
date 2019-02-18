@@ -58,13 +58,9 @@ public class MailBoxPage extends TestBaseSetup {
 		emailbody.sendKeys(prop.getProperty("ebody"));
 		
 		emailsendbtn.click();
-		
-		
-		
-		
-		
 		}
 
+	
 
 
 }

@@ -1,5 +1,7 @@
 package com.outlook.qa.pages;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -85,6 +87,10 @@ public class SignUpPage extends TestBaseSetup {
 		Thread.sleep(3000);
 		nextSIGNIN.click();
 		return new MailBoxPage();
+	}
+	
+public void verifyLoginPassword() {
+	assertTrue(driver.getCurrentUrl().endsWith("failed"));	
 	}
 
 }
