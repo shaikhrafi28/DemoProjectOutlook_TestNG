@@ -11,7 +11,6 @@
     <classes>
       <class name="com.outlook.qa.testcases.LoginPage.LoginTest01">
         <methods>
-          <include name="teardown"/>
           <include name="invalidLoginTest_InvalidPassword"/>
           <include name="set_up"/>
         </methods>
