@@ -85,17 +85,24 @@ public class LoginPage extends TestBaseSetup {
 		Byear.sendKeys(prop.getProperty("birthyear"));
 		nextBtn.click();
 	}
-
-	public MailBoxPage signInUser(String useremail, String userpwd) throws InterruptedException {
+  
+	public void clickOnSignIn() {
+		signInBtn.click();
+	}
+	
+	public void giveUserEmail(String useremail) throws InterruptedException {
 		signInBtn.click();
 	//	emailID.sendKeys(prop.getProperty("Pemail"));
 		emailID.sendKeys(useremail);
 		nextSIGNIN.click();
+	}
+	
+	public void giveUserPwd(String userpwd) throws InterruptedException {
 	//	pswdP.sendKeys(prop.getProperty("Ppwd"));
 		pswdP.sendKeys(userpwd);
 		Thread.sleep(3000);
 		nextSIGNIN.click();
-		return new MailBoxPage();
+		
 	}
 	
 public void verifyLoginPassword() {

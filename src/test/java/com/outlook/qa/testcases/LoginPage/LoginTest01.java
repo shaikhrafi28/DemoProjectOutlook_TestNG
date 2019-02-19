@@ -38,14 +38,16 @@ public class LoginTest01 extends TestBaseSetup {
 		
 
 		// *************PAGE METHODS********************
-		signupPage.signInUser("shaikhrafi08@hotmail.com", "Helloworld");
+		signupPage.clickOnSignIn();
+		signupPage.giveUserEmail("shaikhrafi08@gmail.com");
+		signupPage.giveUserPwd("emiway");
 
 		// *************ASSERTIONS***********************
 		Thread.sleep(500);
 		signupPage.verifyLoginError();
 	}
 
-	@AfterSuite()
+	@AfterTest()
 	public void teardown() {
 		
 		driver.quit();

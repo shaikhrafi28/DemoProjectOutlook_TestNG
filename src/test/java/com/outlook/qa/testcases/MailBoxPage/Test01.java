@@ -35,7 +35,9 @@ public class Test01 extends TestBaseSetup {
 	//	MailBoxPage mailboxpage = new MailBoxPage();
 
 		// *************PAGE METHODS********************
-		signupPage.signInUser("shaikhrafi08@hotmail.com", "Helloworld");
+		signupPage.clickOnSignIn();
+		signupPage.giveUserEmail("shaikhrafi08@gmail.com");
+		signupPage.giveUserPwd("emiway");
 		
 		// *************ASSERTIONS***********************
 		signupPage.verifyLoginPassword();

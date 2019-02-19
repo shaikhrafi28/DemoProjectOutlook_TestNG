@@ -15,7 +15,7 @@ import com.outlook.qa.util.extentreports.ExtentTestManager;
 public class Retry implements IRetryAnalyzer {
  
     private int count = 0;
-    private static int maxTry = 1; //Run the failed test 2 times
+    private static int maxTry = 0; //Run the failed test 2 times
  
     @Override
     public boolean retry(ITestResult iTestResult) {

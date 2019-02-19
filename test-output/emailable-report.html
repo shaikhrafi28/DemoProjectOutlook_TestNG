@@ -29,29 +29,16 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">18.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">44.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
 <tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="2">com.outlook.qa.testcases.LoginPage.LoginTest01<td><a href="#m1"><b>invalidLoginTest_InvalidPassword</b>  ("Invalid Login Scenario with wrong username and password.")</a></td><td class="numi">2</td><td class="numi">9726</td></tr><tr class="failedodd"><td><a href="#m2"><b>invalidLoginTest_InvalidPassword</b>  ("Invalid Login Scenario with wrong username and password.")</a></td><td class="numi">2</td><td class="numi">9726</td></tr>
+<tr class="failedodd"><td rowspan="1">com.outlook.qa.testcases.LoginPage.LoginTest01<td><a href="#m1"><b>invalidLoginTest_InvalidPassword</b>  ("Invalid Login Scenario with wrong username and password.")</a></td><td class="numi">1</td><td class="numi">12729</td></tr>
 </table>
 <h1>Test</h1>
 <a id="m1"></a><h2>com.outlook.qa.testcases.LoginPage.LoginTest01:invalidLoginTest_InvalidPassword</h2>
-<div style="padding-left:3em">
-<p>expected:&lt;Your account or password is incorrect. If you don&apos;t remember your password, reset it now.&gt; but was:&lt;Your account or password is incorrect. If you don&apos;t remember your password, &gt;</p>
-org.testng.Assert.fail(Assert.java:89)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
-<br/>at org.testng.Assert.assertEquals(Assert.java:118)
-<br/>at org.testng.Assert.assertEquals(Assert.java:171)
-<br/>at org.testng.Assert.assertEquals(Assert.java:181)
-<br/>at com.outlook.qa.pages.LoginPage.verifyLoginError(LoginPage.java:110)
-<br/>at com.outlook.qa.testcases.LoginPage.LoginTest01.invalidLoginTest_InvalidPassword(LoginTest01.java:45)
-<br/>25 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>com.outlook.qa.testcases.LoginPage.LoginTest01:invalidLoginTest_InvalidPassword</h2>
 <div style="padding-left:3em">
 <p>element not visible
   (Session info: chrome=72.0.3626.109)
@@ -61,7 +48,7 @@ Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &
 System info: host: &apos;HDC2-D-BXM1T72&apos;, ip: &apos;10.221.126.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\SHAIKH~1.RAF\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.109, webStorageEnabled: true}
-Session ID: 47e89921ce143c10d33f31379a03c02c</p>
+Session ID: fc30cff739cdd7a1efb18deaa5fae0c4</p>
 java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 <br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 <br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -82,8 +69,8 @@ java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native
 <br/>at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 <br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 <br/>at com.sun.proxy.$Proxy12.click(Unknown Source)
-<br/>at com.outlook.qa.pages.LoginPage.signInUser(LoginPage.java:90)
-<br/>at com.outlook.qa.testcases.LoginPage.LoginTest01.invalidLoginTest_InvalidPassword(LoginTest01.java:41)
+<br/>at com.outlook.qa.pages.LoginPage.giveUserEmail(LoginPage.java:94)
+<br/>at com.outlook.qa.testcases.LoginPage.LoginTest01.invalidLoginTest_InvalidPassword(LoginTest01.java:42)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
