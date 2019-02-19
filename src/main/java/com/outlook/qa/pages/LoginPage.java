@@ -90,8 +90,7 @@ public class LoginPage extends TestBaseSetup {
 		signInBtn.click();
 	}
 	
-	public void giveUserEmail(String useremail) throws InterruptedException {
-		signInBtn.click();
+	public void giveUserEmail(String useremail) throws InterruptedException {	
 	//	emailID.sendKeys(prop.getProperty("Pemail"));
 		emailID.sendKeys(useremail);
 		nextSIGNIN.click();
@@ -101,8 +100,7 @@ public class LoginPage extends TestBaseSetup {
 	//	pswdP.sendKeys(prop.getProperty("Ppwd"));
 		pswdP.sendKeys(userpwd);
 		Thread.sleep(3000);
-		nextSIGNIN.click();
-		
+		nextSIGNIN.click();		
 	}
 	
 public void verifyLoginPassword() {
@@ -112,8 +110,8 @@ public void verifyLoginPassword() {
 	}
 
 public void verifyLoginError() {
-	
+	System.out.println(loginErrorpart1.getText());
 //	assertTrue(driver.getCurrentUrl().endsWith("failed"));	
-	Assert.assertEquals("Your account or password is incorrect. If you don't remember your password, ", loginErrorpart1.getText());
+	Assert.assertEquals("Your account or password is incorrect. If you don't remember your password, reset it now.", loginErrorpart1.getText());
 	}
 }

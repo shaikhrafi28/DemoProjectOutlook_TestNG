@@ -29,7 +29,7 @@ public class LoginTest01 extends TestBaseSetup {
 	}
 
 	@Test(priority = 0, description = "Invalid Login Scenario with wrong username and password.")
-	public void invalidLoginTest_InvalidPassword() throws InterruptedException {
+	public void LoginTest_InvalidPassword() throws InterruptedException {
 		// ExtentReports Description
 		ExtentTestManager.getTest().setDescription("Invalid Login Scenario with wrong username and password.");
 
@@ -47,7 +47,7 @@ public class LoginTest01 extends TestBaseSetup {
 		signupPage.verifyLoginError();
 	}
 
-	@AfterTest()
+	@AfterTest(enabled=false)
 	public void teardown() {
 		
 		driver.quit();
