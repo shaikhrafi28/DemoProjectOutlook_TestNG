@@ -1,73 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="1" failed="0" skipped="2">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-02-15T16:47:05Z" name="Suite" finished-at="2019-02-15T16:47:45Z" duration-ms="40341">
+  <suite started-at="2019-02-21T17:30:22Z" name="Suite" finished-at="2019-02-21T17:30:41Z" duration-ms="18895">
     <groups>
     </groups>
-    <test started-at="2019-02-15T16:47:05Z" name="Test" finished-at="2019-02-15T16:47:45Z" duration-ms="40341">
-      <class name="com.outlook.qa.testcases.MailBoxPageTest">
-        <test-method is-config="true" signature="beforesuite()[pri:0, instance:com.outlook.qa.testcases.MailBoxPageTest@4b2bac3f]" started-at="2019-02-15T16:47:04Z" name="beforesuite" finished-at="2019-02-15T16:47:05Z" duration-ms="929" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.outlook.qa.testcases.MailBoxPageTest@4b2bac3f]" started-at="2019-02-15T16:47:05Z" name="setUp" finished-at="2019-02-15T16:47:20Z" duration-ms="15177" status="PASS">
-        </test-method>
-        <test-method signature="loginToOutlook()[pri:1, instance:com.outlook.qa.testcases.MailBoxPageTest@4b2bac3f]" started-at="2019-02-15T16:47:20Z" name="loginToOutlook" finished-at="2019-02-15T16:47:45Z" duration-ms="25104" status="PASS">
-        </test-method>
-        <test-method is-config="true" signature="cbrowser()[pri:0, instance:com.outlook.qa.testcases.MailBoxPageTest@4b2bac3f]" started-at="2019-02-15T16:47:45Z" name="cbrowser" finished-at="2019-02-15T16:47:45Z" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.outlook.qa.util.TestUtil.tearDown(TestUtil.java:42)
-	at com.outlook.qa.testcases.MailBoxPageTest.cbrowser(MailBoxPageTest.java:95)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:543)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:212)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:772)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:883)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1208)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:758)
-	at org.testng.TestRunner.run(TestRunner.java:613)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:87)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1137)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1062)
-	at org.testng.TestNG.run(TestNG.java:974)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception>
-        </test-method>
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.outlook.qa.testcases.MailBoxPageTest@4b2bac3f]" started-at="2019-02-15T16:47:45Z" name="setUp" finished-at="2019-02-15T16:47:45Z" duration-ms="0" status="SKIP">
-        </test-method>
-        <test-method signature="clickNewEmail()[pri:2, instance:com.outlook.qa.testcases.MailBoxPageTest@4b2bac3f]" started-at="2019-02-15T16:47:45Z" name="clickNewEmail" finished-at="2019-02-15T16:47:45Z" duration-ms="1" status="SKIP">
-        </test-method>
-        <test-method is-config="true" signature="cbrowser()[pri:0, instance:com.outlook.qa.testcases.MailBoxPageTest@4b2bac3f]" started-at="2019-02-15T16:47:45Z" name="cbrowser" finished-at="2019-02-15T16:47:45Z" duration-ms="0" status="SKIP">
-        </test-method>
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.outlook.qa.testcases.MailBoxPageTest@4b2bac3f]" started-at="2019-02-15T16:47:45Z" name="setUp" finished-at="2019-02-15T16:47:45Z" duration-ms="0" status="SKIP">
-        </test-method>
-        <test-method is-config="true" signature="cbrowser()[pri:0, instance:com.outlook.qa.testcases.MailBoxPageTest@4b2bac3f]" started-at="2019-02-15T16:47:45Z" name="cbrowser" finished-at="2019-02-15T16:47:45Z" duration-ms="0" status="SKIP">
-        </test-method>
-        <test-method signature="composeNewEmail()[pri:3, instance:com.outlook.qa.testcases.MailBoxPageTest@4b2bac3f]" started-at="2019-02-15T16:47:45Z" name="composeNewEmail" finished-at="2019-02-15T16:47:45Z" duration-ms="0" status="SKIP">
-        </test-method>
-        <test-method is-config="true" signature="aftersuite()[pri:0, instance:com.outlook.qa.testcases.MailBoxPageTest@4b2bac3f]" started-at="2019-02-15T16:47:45Z" name="aftersuite" finished-at="2019-02-15T16:47:45Z" duration-ms="0" status="SKIP">
-        </test-method>
-      </class>
-    </test>
-  </suite>
+    <test started-at="2019-02-21T17:30:22Z" name="Test" finished-at="2019-02-21T17:30:41Z" duration-ms="18895">
+      <class name="com.outlook.qa.testcases.LoginPage.LoginTest01">
+        <test-method is-config="true" signature="set_up()[pri:0, instance:com.outlook.qa.testcases.LoginPage.LoginTest01@b2c9a9c]" started-at="2019-02-21T17:30:22Z" name="set_up" finished-at="2019-02-21T17:30:32Z" duration-ms="10024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- set_up -->
+        <test-method signature="LoginTest_InvalidPassword()[pri:0, instance:com.outlook.qa.testcases.LoginPage.LoginTest01@b2c9a9c]" started-at="2019-02-21T17:30:32Z" name="LoginTest_InvalidPassword" description="Invalid Login Scenario with wrong username and password." finished-at="2019-02-21T17:30:41Z" duration-ms="8838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest_InvalidPassword -->
+      </class> <!-- com.outlook.qa.testcases.LoginPage.LoginTest01 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

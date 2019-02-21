@@ -3,7 +3,7 @@
   
   
   
-  <groupId>MakeMyTripDemo</groupId>
+  <groupId>OutLookDemo</groupId>
   <artifactId>Demo</artifactId>
 	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
@@ -23,7 +23,7 @@
 					<version>2.22.1</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<suiteXmlFile>testng2.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>

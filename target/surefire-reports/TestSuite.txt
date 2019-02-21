@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 2, Errors: 0, Skipped: 12, Time elapsed: 42.771 s <<< FAILURE! - in TestSuite
-cbrowser(com.outlook.qa.testcases.MailBoxPageTest)  Time elapsed: 25.119 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.outlook.qa.testcases.MailBoxPageTest.cbrowser(MailBoxPageTest.java:95)
-
-cbrowser(com.outlook.qa.testcases.MailBoxPageTest)  Time elapsed: 25.12 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.outlook.qa.testcases.MailBoxPageTest.cbrowser(MailBoxPageTest.java:95)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.566 s - in TestSuite
